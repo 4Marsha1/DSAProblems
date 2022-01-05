@@ -1,6 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// bruteforce -------------------> O(n2)
+int findPairs(int arr[], int n, int target)
+{
+    int cnt = 0;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = i + 1; j < n; j++)
+        {
+            if (arr[i] + arr[j] == target)
+                cnt++;
+        }
+    }
+    return cnt;
+}
+
 // hashing
 int getPairsCount(int arr[], int n, int k)
 {
