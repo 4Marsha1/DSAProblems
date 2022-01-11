@@ -1,21 +1,19 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-void toh(int n, int t1id, int t2id, int t3id)
+void toh(int n, char a, char b, char c)
 {
     if (n == 0)
         return;
-    toh(n - 1, t1id, t3id, t2id);
-    cout << n << "[" << t1id << " -> " << t2id << "]" << endl;
-    toh(n - 1, t3id, t2id, t1id);
+    toh(n - 1, a, c, b);
+    cout << a << " -> " << c << endl;
+    toh(n - 1, b, a, c);
 }
 
 int main()
 {
-
     int n;
-    cin >> n;
-    int n1, n2, n3;
-    cin >> n1 >> n2 >> n3;
-    toh(n, n1, n2, n3);
+    char a, b, c;
+    cin >> n >> a >> b >> c;
+    toh(n, a, b, c);
 }
