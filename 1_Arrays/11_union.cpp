@@ -47,19 +47,17 @@ int doUnionBrute(int a[], int n, int b[], int m)
 // Using Hashing
 int doUnion(int a[], int n, int b[], int m)
 {
-    unordered_map<int, int> map;
+    unordered_set<int> set;
     for (int i = 0; i < n; i++)
-    {
-        map[a[i]] = i;
-    }
+        set.insert(a[i]);
     for (int i = 0; i < m; i++)
     {
-        if (map.find(b[i]) != map.end())
+        if (set.find(b[i]) != set.end())
             continue;
         else
-            map[b[i]] = i;
+            set.insert(b[i]);
     }
-    return map.size();
+    return set.size();
 }
 
 int main()

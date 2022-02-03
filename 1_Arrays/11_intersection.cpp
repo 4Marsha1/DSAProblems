@@ -2,17 +2,15 @@
 using namespace std;
 
 // Hashing
-int intersection(int a[], int n, int b[], int m)
+int doIntersection(int a[], int n, int b[], int m)
 {
-    unordered_map<int, int> map;
+    unordered_set<int> set;
     int cnt = 0;
     for (int i = 0; i < n; i++)
-    {
-        map[a[i]] = i;
-    }
+        set.insert(a[i]);
     for (int i = 0; i < m; i++)
     {
-        if (map.find(b[i]) != map.end())
+        if (set.find(b[i]) != set.end())
             cnt++;
     }
     return cnt;
@@ -27,5 +25,5 @@ int main()
         cin >> a[i];
     for (int i = 0; i < m; i++)
         cin >> b[i];
-    cout << intersection(a, n, b, m);
+    cout << doIntersection(a, n, b, m);
 }
