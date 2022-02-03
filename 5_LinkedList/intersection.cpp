@@ -26,9 +26,7 @@ ListNode *getIntersectionNode(ListNode *headA, ListNode *headB)
     while (dumB != NULL)
     {
         if (hash.find(dumB) != hash.end())
-        {
             return dumB;
-        }
         dumB = dumB->next;
     }
     return NULL;
