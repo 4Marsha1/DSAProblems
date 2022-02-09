@@ -12,7 +12,7 @@ char nextAlphabet(char a[], int n, char k)
             start = mid + 1;
         else if (a[mid] > k)
         {
-            ans = mid;
+            ans = a[mid];
             end = mid - 1;
         }
     }
