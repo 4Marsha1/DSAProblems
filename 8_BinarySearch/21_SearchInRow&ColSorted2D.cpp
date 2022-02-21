@@ -10,10 +10,10 @@ bool search(vector<vector<int>> matrix, int n, int m, int x)
     int i = 0, j = m - 1;
     while (i < n && j >= 0)
     {
-        int mid = matrix[i][j];
-        if (mid == x)
+        int current = matrix[i][j];
+        if (current == x)
             return true;
-        else if (mid > x)
+        else if (current > x)
             j--;
         else
             i++;
