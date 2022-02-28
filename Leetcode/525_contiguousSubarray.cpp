@@ -1,3 +1,6 @@
+
+// https://leetcode.com/problems/contiguous-array/
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,6 @@
+
+// https://leetcode.com/problems/ugly-number/
+
 #include <bits/stdc++.h>
 using namespace std;
 

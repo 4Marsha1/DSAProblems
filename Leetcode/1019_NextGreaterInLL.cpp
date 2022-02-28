@@ -1,3 +1,6 @@
+
+// https://leetcode.com/problems/next-greater-node-in-linked-list/
+
 #include <bits/stdc++.h>
 using namespace std;
 

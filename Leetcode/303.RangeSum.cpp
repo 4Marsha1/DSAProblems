@@ -1,3 +1,6 @@
+
+// https://leetcode.com/problems/range-sum-query-immutable/
+
 #include <bits/stdc++.h>
 using namespace std;
 

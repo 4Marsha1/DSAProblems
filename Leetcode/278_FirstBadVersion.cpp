@@ -1,3 +1,6 @@
+
+// https://leetcode.com/problems/first-bad-version/
+
 #include <bits/stdc++.h>
 using namespace std;
 
