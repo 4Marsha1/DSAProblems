@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+
+<body onload="countTo10()">
+    <div id="box"></div>
+    <script>
+        const body = document.getElementById("box")
+        const countTo10 = () => {
+            for(let i=0;i<10;i++){
+                body.textContent += i + ' ';
+            }
+        }
+    </script>
+</body>
+
+</html>
