@@ -62,9 +62,7 @@ vector<int> boundary(Node *root)
     vector<int> right;
     left.push_back(root->data);
     if (isLeaf(root))
-    {
         return left;
-    }
     travB(root->left, left);
     travBR(root->right, right);
     travLeaf(root, leaf);
